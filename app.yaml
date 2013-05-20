@@ -21,3 +21,7 @@ handlers:
   script: tvrage.php
 - url: /wikipedia.php
   script: wikipedia.php
+
+# Catchall
+- url: .*
+  static_dir: static/
