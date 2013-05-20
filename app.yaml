@@ -1,0 +1,23 @@
+application: cobryce-brycebot
+version: test
+
+runtime: php
+api_version: 1
+
+# Eventually, I'm going to move these into slightly-prettier URLs
+# adn.php  call.php  github.php  google.php  packagetrackr.php  tvrage.php  wikipedia.php
+handlers:
+- url: /adn.php
+  script: adn.php
+- url: /call.php
+  script: call.php
+- url: /github.php
+  script: github.php
+- url: /google.php
+  script: google.php
+- url: /packagetrackr.php
+  script: packagetrackr.php
+- url: /tvrage.php
+  script: tvrage.php
+- url: /wikipedia.php
+  script: wikipedia.php
