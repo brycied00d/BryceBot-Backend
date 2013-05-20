@@ -3,7 +3,7 @@
 $CallSid = $_POST['CallSid'];
 $say = @file_get_contents('/tmp/BryceBot_twilio_'.$CallSid);
 @unlink('/tmp/BryceBot_twilio_'.$CallSid);
-require_once('twilio-twilio-php-3252c53/Services/Twilio.php');
+require_once('twilio-twilio-php/Services/Twilio.php');
 $response = new Services_Twilio_Twiml;
 if(!$CallSid)
 {
