@@ -2,3 +2,11 @@ BryceBot Data Backends
 ======================
 These are scripts that fetch, massage, and return data for several
 BryceBot functions. Nothing exciting...
+
+Notes
+=====
+* call.php pulls from /tmp/ on the IRC bot host
+  This will need to be re-implemented.
+* Most of the scripts use curl in order to set connection parameters.
+  This may or may not be permitted in GAE. Reimplementing these using
+  PHP's stream_() methods will lose the connection re-use parameters.
